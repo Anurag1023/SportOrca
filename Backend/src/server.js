@@ -2,6 +2,7 @@ import express from 'express';
 import cors from 'cors';
 import axios from 'axios';
 import { config } from 'dotenv';
+import path from 'path';
 
 
 const app = express();
