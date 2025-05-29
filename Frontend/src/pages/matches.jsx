@@ -7,7 +7,7 @@ const Matches = () => {
   useEffect(() => {
     const fetchMatches = async () => {
       try {
-        const res = await axios.get(`${import.meta.env.MODE === "development" ? "http://localhost:3000/api" : "/api"}/short-matches`);
+        const res = await axios.get(`https://sportorca.onrender.com/api/short-matches`);
         setMatches(res.data);
       } catch (err) {
         console.error("Error fetching matches:", err);
