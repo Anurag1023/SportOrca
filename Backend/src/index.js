@@ -16,7 +16,7 @@ const PORT = process.env.PORT || 3000;
 
 const allowOrigins = process.env.ALLOWED_ORIGINS
   ? process.env.ALLOWED_ORIGINS.split(',')
-  : ['http://localhost:5173','*'];
+  : ['http://localhost:5173','*',"https://sport-orca.vercel.app"];
 
 const corsOptions = {
   origin: function (origin, callback) {
