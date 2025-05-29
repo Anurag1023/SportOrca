@@ -9,6 +9,9 @@ const PORT = process.env.PORT || 3000;
 app.use(cors());
 config({path: "src/.env"});
 
+
+const __dirname = path.resolve();
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
