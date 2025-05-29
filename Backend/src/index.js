@@ -11,7 +11,7 @@ const __dirname = path.dirname(__filename);
 
 const app = express();
 const PORT = process.env.PORT || 3000;
-const alloworigins = process.env.ALLOWED_ORIGINS ? process.env.ALLOWED_ORIGINS.split(',') : ['http://localhost:3000','*'];
+const alloworigins = process.env.ALLOWED_ORIGINS ? process.env.ALLOWED_ORIGINS.split(',') : ['http://localhost:5173','*'];
 const corsOptions = {
   origin: function (origin, callback) {
     if (!origin || alloworigins.indexOf(origin) !== -1) {
