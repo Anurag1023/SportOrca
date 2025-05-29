@@ -7,7 +7,7 @@ const Matches = () => {
   useEffect(() => {
     const fetchMatches = async () => {
       try {
-        const res = await axios.get(`https://sportorca.onrender.com/api/short-matches`);
+        const res = await axios.get(`https://first-vercel-backend.vercel.app/api/short-matches`);
         setMatches(res.data);
       } catch (err) {
         console.error("Error fetching matches:", err);

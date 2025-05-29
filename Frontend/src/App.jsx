@@ -151,7 +151,7 @@ function App() {
             </mask>
           </defs>
           <image
-            href="./bg.png"
+            href="./bg.webp"
             width="100%"
             height="100%"
             preserveAspectRatio="xMidYMid slice"
@@ -165,21 +165,16 @@ function App() {
         >
           <div className="landing-page w-full relative ovwerflow-hidden">
             <div className="w-full h-screen bg-black">
-              <div className="navbar absolute w-full top-0 left-0 px-7 py-5 z-2">
-                <div className="logo flex items-center gap-3">
-                  <img src="./ace.png" alt="" className="h-[5rem]" />
-                </div>
-              </div>
 
               <div className="imagesDiv w-full h-screen overflow-hidden relative">
                 <img
-                  src="./bg.png"
+                  src="./bg.webp"
                   className="sky object-cover w-full h-full absolute top-0 left-0 scale-[1.5] rotate-[-20deg]"
                   alt=""
                 />
 
                 <img
-                  src="./blue.png"
+                  src="./blue.webp"
                   className="second-player object-cover w-full absolute bottom-[-18rem]  left-[-7rem] scale-[1.8] rotate-[-25deg]"
                   alt=""
                 />
@@ -191,12 +186,12 @@ function App() {
                 </div>
 
                 <img
-                  src="./yellow.png"
+                  src="./yellow.webp"
                   className="first-player object-cover w-full absolute bottom-[-18rem] left-50 scale-[1.8] rotate-[-25deg]"
                   alt=""
                 />
                 <img
-                  src="./ball.png"
+                  src="./ball.webp"
                   className="ball object-cover w-full absolute scale-[1] rotate-[20deg] bottom-[-25rem] right-[15rem]"
                   alt=""
                 />

@@ -5,30 +5,10 @@ import { config } from 'dotenv';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
-// Load environment variables early
 config({ path: 'src/.env' });
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
 
 const app = express();
 const PORT = process.env.PORT || 3000;
-
-// const allowOrigins = process.env.ALLOWED_ORIGINS
-//   ? process.env.ALLOWED_ORIGINS.split(',')
-//   : ['http://localhost:5173','*',"https://sport-orca.vercel.app"];
-
-// const corsOptions = {
-//   origin: function (origin, callback) {
-//     if (!origin || allowOrigins.includes(origin) || allowOrigins.includes('*')) {
-//       callback(null, true);
-//     } else {
-//       callback(new Error('Not allowed by CORS'));
-//     }
-//   },
-//   methods: ['GET', 'POST', 'PUT', 'DELETE'],
-//   allowedHeaders: ['Content-Type', 'Authorization']
-// };
 
 // app.use(cors(corsOptions));
 const corsOptions = {
@@ -73,16 +53,6 @@ app.get('/api/short-matches', async (req, res) => {
     res.status(500).json({ error: 'Failed to extract match data' });
   }
 });
-
-// Serve frontend in production
-// if (process.env.NODE_ENV === 'production') {
-//   const frontendPath = path.join(__dirname, '../Frontend/dist');
-//   app.use(express.static(frontendPath));
-
-//   app.get('*', (req, res) => {
-//     res.sendFile(path.join(frontendPath, 'index.html'));
-//   });
-// }
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
