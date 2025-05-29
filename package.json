@@ -1,0 +1,20 @@
+{
+  "name": "sportorca",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm install --prefix Backend && npm install --prefix Frontend && npm run build --prefix Frontend",
+    "start": "npm run start --prefix Backend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anurag1023/SportOrca.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Anurag1023/SportOrca/issues"
+  },
+  "homepage": "https://github.com/Anurag1023/SportOrca#readme",
+  "description": ""
+}
